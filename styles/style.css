@@ -24,7 +24,6 @@ html {
   gap:30px;
   align-items: end;
   max-width:1140px;
-  height: 534px;
   
 }
 
@@ -52,7 +51,6 @@ ol {
 .search-form{
   display: flex;
   justify-content: space-between;
-  min-height: 54px;
   align-items: end;
 }
 .content__details{
@@ -65,13 +63,14 @@ ol {
   height: 298px;
   position: relative;
 }
-.content__list::-webkit-scrollbar { width: 0; }
 .result__video-container{
+  width: 711px;
   height: 386px;
   margin-bottom: 16px;
   position: relative;
 }
 .result__video{
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -90,6 +89,7 @@ ol {
   width: 194px;
   height: 103px;
   object-fit: cover;
+  object-position: center;
 }
 .content__video-card-description-container{
   width: 100%;
@@ -102,7 +102,7 @@ margin-bottom: 5px;
 }
 .title{
   color: #FFF;
-font-family: Oswald;
+font-family: Oswald, sans-serif ;
 font-size: 75px;
 font-style: normal;
 font-weight: 700;
@@ -144,27 +144,19 @@ line-height: 16.2px;
   white-space: nowrap;
 } 
 .search-form__label{
-  display: contents;
   width: fit-content;
   appearance: none;
 align-items: center;
-gap: 10px;
 }
 .search-form__textfield{
-  cursor: pointer;
-}
-.search-form__submit-button{
-  cursor: pointer;
-}
-.search-form__textfield{
-  color: rgba(255, 255, 255, 0.70);
+  color: white;
 font-family: Fira Sans Condensed;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-width: 225px;
-height: 27px;
+min-width: 225px;
+min-height: 27px;
 background: none;
 border: none;
 border-top: 1px solid white;
@@ -177,11 +169,11 @@ height: 19px;
 border: 1px solid white;
 vertical-align: middle;
 cursor: pointer;
+margin-right: 5px;
 }
 .button{
-  cursor: pointer;
   background: none;
-  border: 1px solid white;
+  border: 1px solid currentColor;
   height: 34px;
   color: white;
 }
@@ -197,7 +189,6 @@ cursor: pointer;
 .search-form__checkbox:checked ~ .search-form__pseudo-checkbox::after{
   content: "";
   display: block;
-  inset: 0;
   margin: auto;
   background: white;
   width: 15px;
@@ -214,24 +205,29 @@ cursor: pointer;
 .search-form__textfield:focus {
       outline: none;
     }
-.search-form__label-text:hover{
-      text-decoration: underline;
-    }
+
 .search-form__textfield:active{
   border:1px solid white;
 }
 .button:active{
   background: #545050;
 }
+.button:focus{
+  outline: none;
+}
+.button:focus-visible {
+  border: 1px solid #FFFFFF;
+  outline: none;
+}
+button:hover{
+  cursor: pointer;
+}
 .content__card-link{
   display: block;
+  margin: 2px;
 }
 .content__card-link_current{
   background:#545050;
-}
-
-.content__card-link{
-  margin: 2px;
 }
 .content__card-link:active{
   background:#545050;
@@ -245,4 +241,8 @@ cursor: pointer;
 }
 .content__card-link:focus-visible{
   border: 1px solid white;
+}
+
+.search-form__label span:hover{
+  text-decoration: underline; 
 }
