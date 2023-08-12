@@ -20,8 +20,7 @@ html {
 }
 .content{
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  margin:auto;
   margin-top: 133px;
   margin-bottom: 133px;
   gap:30px;
@@ -68,6 +67,7 @@ ol {
   height: 298px;
   position: relative;
 }
+.content__list::-webkit-scrollbar { width: 0; }
 .result__video-container{
   height: 386px;
   margin-bottom: 16px;
