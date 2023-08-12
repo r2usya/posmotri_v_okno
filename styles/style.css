@@ -26,6 +26,8 @@ html {
   margin-bottom: 133px;
   gap:30px;
   align-items: end;
+  max-width:1140px;
+  height: 534px;
   
 }
 
