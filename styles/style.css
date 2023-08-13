@@ -94,9 +94,9 @@ ol {
 .content__video-card-description-container{
   width: 100%;
 }
-.search-form__fieldset{
+/* .search-form__fieldset{
   height: 49px;
-}
+} */
 .search-form__fieldset-title{
   color: #FFF;
 font-size: 18px;
@@ -152,6 +152,7 @@ line-height: 16.2px;
   cursor: pointer;
   width: fit-content;
   appearance: none;
+  margin-right:15px ;
 }
 .search-form__textfield{
   color: white;
