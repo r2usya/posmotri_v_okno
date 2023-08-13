@@ -116,9 +116,11 @@ margin-bottom: 26px;
 .content__card-link{
   text-decoration: none;
   color: #FFF;
+  display: block;
+  margin: 2px;
 }
 .content__video-card-title{
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
 font-size: 30px;
 font-style: normal;
 font-weight: 700;
@@ -128,7 +130,7 @@ margin-bottom: 6px;
 }
 .content__video-card-description{
   color: #FFF;
-font-family: Fira Sans Condensed;
+font-family: Fira Sans Condensed, sans-serif;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
@@ -144,13 +146,13 @@ line-height: 16.2px;
   white-space: nowrap;
 } 
 .search-form__label{
+  cursor: pointer;
   width: fit-content;
   appearance: none;
-align-items: center;
 }
 .search-form__textfield{
   color: white;
-font-family: Fira Sans Condensed;
+font-family: Fira Sans Condensed, sans-serif;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
@@ -170,12 +172,33 @@ border: 1px solid white;
 vertical-align: middle;
 cursor: pointer;
 margin-right: 5px;
+/* я не понимаю, я пытался через флекс так не работает, все ломается, я сделал как нас учили в теории же 
+label span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+  background-color: #feafe8;
+}
+это взято из теории про создаем красивые флажки 
+зачем мне надо через flex?  
+я чтото не так понимаю?  */
+/* display: flex;
+align-items:center;
+justify-content: center; */
 }
 .button{
   background: none;
   border: 1px solid currentColor;
   height: 34px;
-  color: white;
+  color: #FFF;
+text-align: center;
+font-family: Fira Sans Condensed, sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 }
 .search-form__submit-button{
   width: 194px;
@@ -216,15 +239,11 @@ margin-right: 5px;
   outline: none;
 }
 .button:focus-visible {
-  border: 1px solid #FFFFFF;
-  outline: none;
+  outline: 1px solid #FFFFFF;
 }
 button:hover{
   cursor: pointer;
-}
-.content__card-link{
-  display: block;
-  margin: 2px;
+  text-decoration: underline;
 }
 .content__card-link_current{
   background:#545050;
@@ -243,6 +262,6 @@ button:hover{
   border: 1px solid white;
 }
 
-.search-form__label span:hover{
+.search-form__label:hover .search-form__label-text{
   text-decoration: underline; 
 }
