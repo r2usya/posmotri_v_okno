@@ -94,6 +94,9 @@ ol {
 .content__video-card-description-container{
   width: 100%;
 }
+.search-form__fieldset{
+  height: 49px;
+}
 .search-form__fieldset-title{
   color: #FFF;
 font-size: 18px;
