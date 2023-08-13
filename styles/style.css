@@ -23,9 +23,7 @@ html {
   margin:auto;
   gap:30px;
   align-items: end;
-  max-width:1140px;
-  max-height: 534px;
-  
+  max-width:1140px;  
 }
 
 h1,
@@ -54,6 +52,7 @@ ol {
   justify-content: space-between;
   align-items: end;
   /* height: 49px; */
+  margin-bottom: 1px;
 }
 .content__details{
   height: auto;
