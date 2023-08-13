@@ -52,6 +52,7 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: end;
+  height: 49px;
 }
 .content__details{
   height: auto;
