@@ -94,9 +94,10 @@ ol {
 .content__video-card-description-container{
   width: 100%;
 }
-/* .search-form__fieldset{
+/*  */
+.search-form__fieldset{
   height: 49px;
-} */
+}
 .search-form__fieldset-title{
   color: #FFF;
 font-size: 18px;
@@ -153,6 +154,10 @@ line-height: 16.2px;
   width: fit-content;
   appearance: none;
   margin-right:15px ;
+  display: flex;
+}
+.search-form__label:last-child{
+  margin-right: 0;
 }
 .search-form__textfield{
   color: white;
@@ -168,29 +173,19 @@ border: none;
 border-top: 1px solid white;
 border-bottom: 1px solid white;
 }
+
+.search-form__checkbox-list{
+  display: flex;
+  justify-content: space-between;
+}
+
 .search-form__pseudo-checkbox{
-  display: inline-block;
   width: 19px;
 height: 19px;
 border: 1px solid white;
 vertical-align: middle;
 cursor: pointer;
 margin-right: 5px;
-/* я не понимаю, я пытался через флекс так не работает, все ломается, я сделал как нас учили в теории же 
-label span {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-  vertical-align: middle;
-  background-color: #feafe8;
-}
-это взято из теории про создаем красивые флажки 
-зачем мне надо через flex?  
-я чтото не так понимаю?  */
-/* display: flex;
-align-items:center;
-justify-content: center; */
 }
 .button{
   background: none;
