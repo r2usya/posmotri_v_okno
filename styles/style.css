@@ -24,6 +24,7 @@ html {
     gap: 30px;
     align-items: end;
     max-width: 1140px;
+    max-height: 534px;
 }
 
 h1,
@@ -55,6 +56,7 @@ ol {
 .content__details {
     height: auto;
     width: auto;
+    min-width: 324px;
 }
 .content__list {
     overflow-y: auto;
@@ -90,12 +92,10 @@ ol {
     object-position: center;
 }
 .content__video-card-description-container {
-    width: 100%;
+    /* width: 100%; */
+    width: 200px;
 }
-/*  */
-.search-form__fieldset {
-    height: 49px;
-}
+
 .search-form__fieldset-title {
     color: #fff;
     font-size: 18px;
@@ -153,6 +153,7 @@ ol {
     appearance: none;
     margin-right: 15px;
     display: flex;
+    align-items: center;
 }
 .search-form__label:last-child {
     margin-right: 0;
@@ -175,15 +176,18 @@ ol {
 .search-form__checkbox-list {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5px;
 }
 
 .search-form__pseudo-checkbox {
     width: 19px;
     height: 19px;
     border: 1px solid white;
-    vertical-align: middle;
     cursor: pointer;
     margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .button {
     background: none;
