@@ -92,8 +92,7 @@ ol {
     object-position: center;
 }
 .content__video-card-description-container {
-    /* width: 100%; */
-    width: 200px;
+    min-width: 200px;
 }
 
 .search-form__fieldset-title {
@@ -110,7 +109,8 @@ ol {
     font-weight: 700;
     line-height: 94%;
     text-transform: uppercase;
-    margin-bottom: 26px;
+    margin-bottom: 21px;
+    min-width: 399px;
 }
 .content__accent {
     color: #545050;
