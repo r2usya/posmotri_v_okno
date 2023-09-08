@@ -24,7 +24,6 @@ html {
     gap: 30px;
     align-items: end;
     max-width: 1140px;
-    max-height: 534px;
 }
 
 h1,
@@ -56,7 +55,6 @@ ol {
 .content__details {
     height: auto;
     width: auto;
-    min-width: 324px;
 }
 .content__list {
     overflow-y: auto;
@@ -169,8 +167,8 @@ ol {
     min-height: 27px;
     background: none;
     border: none;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
 }
 
 .search-form__checkbox-list {
